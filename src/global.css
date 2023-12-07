@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --body-regular: Manrope;
+
+  /* font sizes */
+  --body-regular-size: 16px;
+  --body-medium-size: 14px;
+
+  /* Colors */
+  --neutral-1: #fff;
+  --neutral-5: #e4e9f2;
+  --character-secondary-45: rgba(11, 24, 40, 0.45);
+  --character-title-85: rgba(0, 0, 0, 0.85);
+  --azul-oscuro: #1b2455;
+  --character-mark: #000;
+
+  /* Gaps */
+  --gap-3xs: 10px;
+  --gap-5xs: 8px;
+
+  /* Paddings */
+  --padding-5xs: 8px;
+  --padding-9xs: 4px;
+  --padding-12xs: 1px;
+  --padding-3xs: 10px;
+  --padding-base: 16px;
+  --padding-smi: 13px;
+
+  /* Border radiuses */
+  --br-3xs: 10px;
+}
