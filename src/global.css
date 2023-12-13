@@ -9,9 +9,15 @@ body {
   /* fonts */
   --body-regular: Manrope;
 
+  --h5-bold: Manrope;
+  --font-roboto: Roboto;
+
+
   /* font sizes */
   --body-regular-size: 16px;
   --body-medium-size: 14px;
+
+  --h5-bold-size: 16px;
 
   /* Colors */
   --neutral-1: #fff;
@@ -21,9 +27,21 @@ body {
   --azul-oscuro: #1b2455;
   --character-mark: #000;
 
+  --primary-5: #40a9ff;
+  --neutral-5: #e4e9f2;
+  --blanco: #fff;
+  --primary-6: #2c376e;
+  --azul-oscuro: #1b2455;
+  --character-secondary-45: rgba(11, 24, 40, 0.45);
+  --character-title-85: rgba(0, 0, 0, 0.85);
+  --character-mark: #000;
+  --character-disabledampplaceholder-25: #bcbec9;
+
+
   /* Gaps */
   --gap-3xs: 10px;
   --gap-5xs: 8px;
+
 
   /* Paddings */
   --padding-5xs: 8px;
@@ -33,6 +51,23 @@ body {
   --padding-base: 16px;
   --padding-smi: 13px;
 
+  --padding-8xs: 5px;
+  --padding-xs: 12px;
+
+  --padding-5xl: 24px;
+  --padding-xl: 20px;
+
+
   /* Border radiuses */
   --br-3xs: 10px;
+
+  --br-7xs: 6px;
+  --br-11xs: 2px;
+
+    /* Effects */
+    --drop-shadow-button-primary: 0px 2px 0px rgba(0, 0, 0, 0.04);
+    --drop-shadow-button-secondary: 0px 2px 0px rgba(0, 0, 0, 0.02);
+    --drop-shadow-active-2px-spread: 0px 0px 0px 2px rgba(24, 144, 255, 0.2);
+    --drop-shadow-0120805: 0px 3px 6px -4px rgba(0, 0, 0, 0.12),
+      0px 6px 16px rgba(0, 0, 0, 0.08), 0px 9px 28px 8px rgba(0, 0, 0, 0.05);
 }

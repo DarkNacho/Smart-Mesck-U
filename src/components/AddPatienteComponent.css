@@ -1,0 +1,89 @@
+.aadir-paciente {
+  position: relative;
+  line-height: 24px;
+  font-weight: 500;
+}
+.close-icon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.close-icon:hover {
+  background-color: rgba(255, 0, 0, 0.658);
+  cursor: pointer;
+}
+.frame,
+.header {
+  align-self: stretch;
+}
+.header {
+  background-color: var(--primary-6);
+  box-shadow: 0-1px 0#f0f0f0 inset;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-base) var(--padding-5xl);
+}
+.frame {
+  border: 0;
+  background-color: transparent;
+  font-family: var(--h5-bold);
+  font-size: var(--h5-bold-size);
+  color: var(--character-title-85);
+}
+.patientform {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+}
+.content,
+.footer,
+.patientform {
+  align-self: stretch;
+  display: flex;
+}
+.content {
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xl);
+}
+.footer {
+  background-color: var(--primary-6);
+  box-shadow: 0 1px 0#f0f0f0 inset;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--padding-3xs) var(--padding-base);
+  gap: var(--gap-5xs);
+}
+.addpatientecomponent {
+  border-radius: var(--br-11xs);
+  background-color: var(--blanco);
+  box-shadow: var(--drop-shadow-0120805);
+  border: 1px solid var(--blanco);
+  box-sizing: border-box;
+  width: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--h5-bold-size);
+  color: var(--blanco);
+  font-family: var(--h5-bold);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
