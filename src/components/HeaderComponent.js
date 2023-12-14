@@ -1,8 +1,8 @@
 import { useCallback } from "react";
 import { Button } from "@mui/material";
-import "./Header.css";
+import "./HeaderComponent.css";
 
-const Header = () => {
+const HeaderComponent = () => {
   const onUserContainerClick = useCallback(() => {
     window.location.href = "http://www.google.com";
   }, []);
@@ -11,16 +11,16 @@ const Header = () => {
       <ul className="items">
         <ul className="menulegacy">
           <Button className="menu-item" color="primary" variant="text">
-            Encounters
+            Consultas
           </Button>
           <Button className="menu-item" color="primary" variant="text">
-            Patients
+            Pacientes
           </Button>
           <Button className="menu-item" color="primary" variant="text">
-            Practitioners
+            Practicantes
           </Button>
           <Button className="menu-item" color="primary" variant="text">
-            Questionnaires
+            Formularios
           </Button>
         </ul>
         <Button
@@ -30,7 +30,7 @@ const Header = () => {
           variant="contained"
           href="www.google.com"
         >
-          Logout
+          Salir
         </Button>
         <div className="user">
           <div className="user1" onClick={onUserContainerClick}>
@@ -47,4 +47,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderComponent;
