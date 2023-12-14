@@ -42,7 +42,7 @@
 }
 .graphcontainer {
   border-radius: var(--br-3xs);
-  background-color: var(--neutral-5);
+  background-color: #DEEBFD;
   border: 1px solid var(--neutral-1);
   box-sizing: border-box;
   height: 500px;
@@ -52,10 +52,12 @@
   font-size: 30px;
   color: var(--neutral-1);
   font-family: var(--body-regular);
+
 }
 
 .iframe {
   
+  padding: 30px;
   width: 100%;
   height: 90%;
   border-radius: 0 0 10px 10px;
