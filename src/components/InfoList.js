@@ -1,6 +1,6 @@
 import "./InfoList.css";
 
-const InfoList = () => {
+const InfoList = ({data}) => {
   return (
     <div className="infolist">
       <div className="title">
@@ -33,6 +33,14 @@ const InfoList = () => {
             <div className="text1">Ejemplo 3</div>
             <div className="text2">11/10/2022</div>
           </div>
+  
+          {data.map((dato, index) => (
+            <div className="item" key={index}>
+              <div className="text1">{dato.name}</div>
+              <div className="text2">{dato.value}</div>
+            </div>
+          ))}
+
         </ul>
       </div>
     </div>
