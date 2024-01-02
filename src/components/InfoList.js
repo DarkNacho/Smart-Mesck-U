@@ -1,47 +1,37 @@
-import "./InfoList.css";
+import styles from "./InfoList.module.css";
 
-const InfoList = ({data}) => {
-  return (
-    <div className="infolist">
-      <div className="title">
-        <div className="icon">
-          <div className="ellipse" />
-          <img className="contacts-icon" alt="" src="/contacts.svg" />
-        </div>
-        <b className="title1">Info List</b>
-        <b className="text">Edit</b>
+const InfoList = ({ data , edit }) => {
+  console.log("data:", data);
+
+  let content;
+
+  if (!data || data.length === 0) {
+    content = <div className={styles.emptyMessage}>No hay datos disponibles</div>;
+  } else {
+    content = data.map((dato, index) => (
+      <div className={styles.item} key={index}>
+        <div className={styles.text1}>{dato.name}</div>
+        <div className={styles.text2}>{dato.value}</div>
       </div>
-      <div className="table">
-        <ul className="text-wrapper">
-          <div className="item">
-            <div className="text1">Covid-19 Vacuna</div>
-            <div className="text2"> 10/10/2022</div>
-          </div>
-          <div className="item">
-            <div className="text1">Pneumococcal PPSV23</div>
-            <div className="text2">11/10/2022</div>
-          </div>
-          <div className="item">
-            <div className="text1">Ejemplo 1</div>
-            <div className="text2">11/10/2022</div>
-          </div>
-          <div className="item">
-            <div className="text1">Ejemplo 2</div>
-            <div className="text2">11/10/2022</div>
-          </div>
-          <div className="item">
-            <div className="text1">Ejemplo 3</div>
-            <div className="text2">11/10/2022</div>
-          </div>
-  
-          {data.map((dato, index) => (
-            <div className="item" key={index}>
-              <div className="text1">{dato.name}</div>
-              <div className="text2">{dato.value}</div>
-            </div>
-          ))}
+    ));
+  }
 
-        </ul>
+  return (
+    <div className={styles.infolist}>
+      <div className={styles.title}>
+        <div className={styles.icon}>
+          <div className={styles.ellipse} />
+          <img
+            className={styles["contacts-icon"]}
+            alt=""
+            src="/medication.svg"
+          />
+        </div>
+        <b className={styles.title1}>Info List</b>
+        { edit && <b className={styles.text}>Edit</b> }
+      </div>
+      <div className={styles.table}>
+        <ul className={styles["text-wrapper"]}>{content}</ul>
       </div>
     </div>
   );

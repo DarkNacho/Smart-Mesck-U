@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+//import "./QuestionnaireComponent.css";
 
 const QuestionnaireComponent = ({ formDef, formId }) => {
   const formContainerRef = useRef(null);
@@ -8,10 +9,14 @@ const QuestionnaireComponent = ({ formDef, formId }) => {
     const formOptions = {
       addCancelButton: false,
       addBackButton: false,
-      formStatus: 'preview'
+      formReadOnly: false
+      //formStatus: readonly ? 'display' : 'preview'
     };
+
+    
     LForms.Util.addFormToPage(formDef, formContainer, formOptions);
   }, [formDef]);
+
 
   const showQR = () => {
     const formContainer = formContainerRef.current;

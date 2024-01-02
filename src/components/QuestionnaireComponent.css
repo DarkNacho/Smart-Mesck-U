@@ -1,0 +1,15 @@
+.lhc-form-title {
+    background-color: black;
+    font-size: 60px;
+}
+
+.lhc-form label {
+    font-size: 25px;
+    color: darkorchid;
+}
+
+.lhc-form input
+{
+    background-color: red;
+    height: 30px;
+}

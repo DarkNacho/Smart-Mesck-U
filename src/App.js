@@ -5,7 +5,12 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import DashboardPage from "./pages/DashboardPage";
+
+//import {DashboardPage , NewPage, PatientListPage, ObservationPage} from "./pages"
+import ObservationPage from "./pages/ObservationPage";
+import PatientListPage from "./pages/PatientListPage";
+import NewPage from "./pages/NewPage";
+import PatientPage from "./pages/PatientPage";
 
 function App() {
   const action = useNavigationType();
@@ -45,7 +50,10 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<DashboardPage />} />
+      <Route path="/" element={<PatientListPage></PatientListPage>}></Route>
+      <Route path="/Observation/:id" element={<ObservationPage></ObservationPage>} />
+      <Route path="/que" element={<NewPage></NewPage>}></Route>
+      <Route path="/Patient/:id" element={<PatientPage></PatientPage>}></Route>
     </Routes>
   );
 }

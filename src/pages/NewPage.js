@@ -1,6 +1,11 @@
 import React, { useEffect } from 'react';
 import QuestionnaireComponent from '../components/QuestionnaireComponent';
 
+import { Accordion, AccordionSummary, AccordionDetails, Typography } from '@mui/material';
+
+
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 const NewPage = () => {
 
   var listaFormularios = 
@@ -9,6 +14,7 @@ const NewPage = () => {
       "status": "draft",
       "title": "form 1",
       "resourceType": "Questionnaire",
+      "id": "44315366",
       "item": [
         {
           "type": "group",
@@ -3250,15 +3256,1927 @@ const NewPage = () => {
     }
   ]
 
+
+  var formulariosHAPI =  [
+    {
+      "fullUrl": "https://hapi.fhir.org/baseR4/Questionnaire/63500",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "63500",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2019-11-14T16:01:24.974+00:00",
+          "source": "#bKEsLhuCMcDVU4Gf",
+          "profile": [
+            "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|2.7"
+          ]
+        },
+        "title": "Update form",
+        "status": "draft",
+        "item": [
+          {
+            "linkId": "/43149-4",
+            "code": [
+              {
+                "system": "http://loinc.org",
+                "code": "43149-4",
+                "display": "Heart rate device panel"
+              }
+            ],
+            "text": "Heart rate device panel",
+            "type": "group",
+            "required": false,
+            "item": [
+              {
+                "linkId": "/43149-4/10249-1",
+                "code": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "10249-1",
+                    "display": "Hrt Rate Device Inventory #"
+                  }
+                ],
+                "text": "Hrt Rate Device Inventory #",
+                "type": "string",
+                "required": false
+              },
+              {
+                "linkId": "/43149-4/8887-2",
+                "code": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "8887-2",
+                    "display": "Hrt Rate Device Class"
+                  }
+                ],
+                "text": "Hrt Rate Device Class",
+                "type": "string",
+                "required": false
+              },
+              {
+                "linkId": "/43149-4/10250-9",
+                "code": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "10250-9",
+                    "display": "Model # Hrt Rate Device"
+                  }
+                ],
+                "text": "Model # Hrt Rate Device",
+                "type": "string",
+                "required": false
+              },
+              {
+                "linkId": "/43149-4/41919-2",
+                "code": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "41919-2",
+                    "display": "Hrt Rate Device Software vers"
+                  }
+                ],
+                "text": "Hrt Rate Device Software vers",
+                "type": "string",
+                "required": false
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                    "valueCoding": {
+                      "display": "{beats}/min"
+                    }
+                  }
+                ],
+                "linkId": "/43149-4/41920-0",
+                "code": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "41920-0",
+                    "display": "Heart rate 1h Mean"
+                  }
+                ],
+                "text": "Heart rate 1h Mean",
+                "type": "decimal",
+                "required": false
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                    "valueCoding": {
+                      "display": "{beats}/min"
+                    }
+                  }
+                ],
+                "linkId": "/43149-4/41921-8",
+                "code": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "41921-8",
+                    "display": "Heart rate 8h Mean"
+                  }
+                ],
+                "text": "Heart rate 8h Mean",
+                "type": "decimal",
+                "required": false
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                    "valueCoding": {
+                      "display": "{beats}/min"
+                    }
+                  }
+                ],
+                "linkId": "/43149-4/41922-6",
+                "code": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "41922-6",
+                    "display": "Heart rate 10h Mean"
+                  }
+                ],
+                "text": "Heart rate 10h Mean",
+                "type": "decimal",
+                "required": false
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                    "valueCoding": {
+                      "display": "{beats}/min"
+                    }
+                  }
+                ],
+                "linkId": "/43149-4/41923-4",
+                "code": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "41923-4",
+                    "display": "Heart rate 12h Mean"
+                  }
+                ],
+                "text": "Heart rate 12h Mean",
+                "type": "decimal",
+                "required": false
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                    "valueCoding": {
+                      "display": "{beats}/min"
+                    }
+                  }
+                ],
+                "linkId": "/43149-4/41924-2",
+                "code": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "41924-2",
+                    "display": "Heart rate 24h Mean"
+                  }
+                ],
+                "text": "Heart rate 24h Mean",
+                "type": "decimal",
+                "required": false
+              }
+            ]
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://hapi.fhir.org/baseR4/Questionnaire/66609",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "66609",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-16T14:27:07.404+00:00",
+          "source": "#PaHDOMdEPSFxuiZx",
+          "profile": [
+            "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.5.0"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/variable",
+            "valueExpression": {
+              "name": "weight",
+              "language": "text/fhirpath",
+              "expression": "%resource.item.where(linkId='/29463-7').answer.valueQuantity.value"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/variable",
+            "valueExpression": {
+              "name": "height",
+              "language": "text/fhirpath",
+              "expression": "%resource.item.where(linkId='/8302-2').answer.valueQuantity.value*0.0254"
+            }
+          }
+        ],
+        "version": "2.56",
+        "name": "Weight & Height tracking panel",
+        "title": "Weight & Height tracking panel",
+        "status": "draft",
+        "subjectType": [
+          "Patient",
+          "Person"
+        ],
+        "date": "2018-09-12T22:03:40.000Z",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "55418-8",
+            "display": "Weight & Height tracking panel"
+          }
+        ],
+        "item": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "kg"
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "system": "http://unitsofmeasure.org",
+                  "code": "kg"
+                }
+              }
+            ],
+            "linkId": "/29463-7",
+            "code": [
+              {
+                "system": "http://loinc.org",
+                "code": "29463-7",
+                "display": "Weight"
+              }
+            ],
+            "text": "Weight",
+            "type": "decimal",
+            "required": false
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ],
+                  "text": "Drop down"
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "Combo-box",
+                      "display": "Combo-box"
+                    }
+                  ],
+                  "text": "Combo-box"
+                }
+              }
+            ],
+            "linkId": "/8352-7",
+            "code": [
+              {
+                "system": "http://loinc.org",
+                "code": "8352-7",
+                "display": "Clothing worn during measure"
+              }
+            ],
+            "text": "Clothing worn during measure",
+            "type": "choice",
+            "required": false,
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "code": "LA11871-3",
+                  "display": "Underwear or less"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "LA11872-1",
+                  "display": "Street clothes, no shoes"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "LA11873-9",
+                  "display": "Street clothes & shoes"
+                }
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "[in_i]"
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "system": "http://unitsofmeasure.org",
+                  "code": "[in_i]"
+                }
+              }
+            ],
+            "linkId": "/8302-2",
+            "code": [
+              {
+                "system": "http://loinc.org",
+                "code": "8302-2",
+                "display": "Body height"
+              }
+            ],
+            "text": "Body height",
+            "type": "decimal",
+            "required": false
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "kg/m2"
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-calculatedExpression",
+                "valueExpression": {
+                  "language": "text/fhirpath",
+                  "expression": "((%weight/%height/%height*10 +0.5) div 1)/10"
+                }
+              }
+            ],
+            "linkId": "/39156-5",
+            "code": [
+              {
+                "system": "http://loinc.org",
+                "code": "39156-5",
+                "display": "BMI"
+              }
+            ],
+            "text": "BMI",
+            "type": "decimal",
+            "required": false
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ],
+                  "text": "Drop down"
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "Combo-box",
+                      "display": "Combo-box"
+                    }
+                  ],
+                  "text": "Combo-box"
+                }
+              }
+            ],
+            "linkId": "/8361-8",
+            "code": [
+              {
+                "system": "http://loinc.org",
+                "code": "8361-8",
+                "display": "Bdy position with respect to gravity"
+              }
+            ],
+            "text": "Bdy position with respect to gravity",
+            "type": "choice",
+            "required": false,
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "code": "LA11868-9",
+                  "display": "Sitting"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "LA11869-7",
+                  "display": "Lying"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "LA11870-5",
+                  "display": "Standing"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://hapi.fhir.org/baseR4/Questionnaire/70494",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "70494",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-19T10:23:14.006+00:00",
+          "source": "#D64aUTLt2ZkOWN6j"
+        },
+        "title": "Obesity Questionnaire",
+        "status": "active",
+        "subjectType": [
+          "Patient"
+        ],
+        "date": "2010",
+        "code": [
+          {
+            "system": "https://details.loinc.org/LOINC/39156-5.html",
+            "code": "39156-5 ",
+            "display": "Body mass index"
+          }
+        ],
+        "item": [
+          {
+            "linkId": "1",
+            "text": "DO YOU SEE YOURSELF AS AN OBESE PERSON?",
+            "type": "boolean"
+          },
+          {
+            "linkId": "2",
+            "text": "DO YOU BELIEVE YOUR EATING HABITS ARE THE CAUSE OF YOUR OBESITY CONDITION?",
+            "type": "boolean"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://hapi.fhir.org/baseR4/Questionnaire/70495",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "70495",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-19T10:23:14.526+00:00",
+          "source": "#jsgArYBk4MZ1ilad"
+        },
+        "title": "Obesity Questionnaire",
+        "status": "active",
+        "subjectType": [
+          "Patient"
+        ],
+        "date": "2010",
+        "code": [
+          {
+            "system": "https://details.loinc.org/LOINC/39156-5.html",
+            "code": "39156-5 ",
+            "display": "Body mass index"
+          }
+        ],
+        "item": [
+          {
+            "linkId": "1",
+            "text": "DO YOU SEE YOURSELF AS AN OBESE PERSON?",
+            "type": "group"
+          },
+          {
+            "linkId": "2",
+            "text": "DO YOU BELIEVE YOUR EATING HABITS ARE THE CAUSE OF YOUR OBESITY CONDITION?",
+            "type": "group"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://hapi.fhir.org/baseR4/Questionnaire/70496",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "70496",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-19T10:23:14.929+00:00",
+          "source": "#klmCKRxmZawjNmT1"
+        },
+        "title": "Obesity Questionnaire",
+        "status": "active",
+        "subjectType": [
+          "Patient"
+        ],
+        "date": "2010",
+        "code": [
+          {
+            "system": "https://details.loinc.org/LOINC/39156-5.html",
+            "code": "39156-5 ",
+            "display": "Body mass index"
+          }
+        ],
+        "item": [
+          {
+            "linkId": "1",
+            "text": "DO YOU SEE YOURSELF AS AN OBESE PERSON?",
+            "type": "display"
+          },
+          {
+            "linkId": "2",
+            "text": "DO YOU BELIEVE YOUR EATING HABITS ARE THE CAUSE OF YOUR OBESITY CONDITION?",
+            "type": "display"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://hapi.fhir.org/baseR4/Questionnaire/70497",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "70497",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-19T10:23:15.295+00:00",
+          "source": "#zD7qjpeT0JQpPga6"
+        },
+        "title": "Obesity Questionnaire",
+        "status": "active",
+        "subjectType": [
+          "Patient"
+        ],
+        "date": "2010",
+        "code": [
+          {
+            "system": "https://details.loinc.org/LOINC/39156-5.html",
+            "code": "39156-5 ",
+            "display": "Body mass index"
+          }
+        ],
+        "item": [
+          {
+            "linkId": "1",
+            "text": "DO YOU SEE YOURSELF AS AN OBESE PERSON?",
+            "type": "decimal"
+          },
+          {
+            "linkId": "2",
+            "text": "DO YOU BELIEVE YOUR EATING HABITS ARE THE CAUSE OF YOUR OBESITY CONDITION?",
+            "type": "decimal"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://hapi.fhir.org/baseR4/Questionnaire/70498",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "70498",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-19T10:23:15.650+00:00",
+          "source": "#3EkqClF0HHHM1nYG"
+        },
+        "title": "Obesity Questionnaire",
+        "status": "active",
+        "subjectType": [
+          "Patient"
+        ],
+        "date": "2010",
+        "code": [
+          {
+            "system": "https://details.loinc.org/LOINC/39156-5.html",
+            "code": "39156-5 ",
+            "display": "Body mass index"
+          }
+        ],
+        "item": [
+          {
+            "linkId": "1",
+            "text": "DO YOU SEE YOURSELF AS AN OBESE PERSON?",
+            "type": "integer"
+          },
+          {
+            "linkId": "2",
+            "text": "DO YOU BELIEVE YOUR EATING HABITS ARE THE CAUSE OF YOUR OBESITY CONDITION?",
+            "type": "integer"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://hapi.fhir.org/baseR4/Questionnaire/70932",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "70932",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-19T13:33:33.498+00:00",
+          "source": "#ZlUlWBLcPBZ38GJt"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">example with one question</div>"
+        },
+        "version": "1.0.0",
+        "name": "OneQuestion",
+        "title": "OneQuestion Example",
+        "status": "active",
+        "publisher": "MITRE",
+        "item": [
+          {
+            "linkId": "only-question",
+            "prefix": "A0270",
+            "text": "Discharge Date",
+            "type": "open-choice",
+            "repeats": false,
+            "readOnly": false,
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "code": "^",
+                  "display": "Blank (skip pattern)"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "MMDDYYYY",
+                  "display": "Discharge date"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://hapi.fhir.org/baseR4/Questionnaire/72602",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "72602",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-21T10:15:58.218+00:00",
+          "source": "#HaHZoRwaLbYmxzSC"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <pre>\n        <b>Birth details - To be completed by health professional</b>\n  Name of child: ____________________________________\n            Sex: __\n            \n  Neonatal Information\n    Birth Weight (kg): ___________\n    Birth Length (cm): ___________\n    Vitamin K given  : __\n             1st dose: ___________\n             2nd dose: ___________\n    Hep B given      : __\n      Date given     : ___________\n    Abnormalities noted at birth:\n      _______________________________________________\n      </pre>\n    </div>"
+        },
+        "url": "http://hl7.org/fhir/Questionnaire/bb",
+        "title": "NSW Government My Personal Health Record",
+        "status": "draft",
+        "subjectType": [
+          "Patient"
+        ],
+        "date": "2013-02-19",
+        "publisher": "New South Wales Department of Health",
+        "jurisdiction": [
+          {
+            "coding": [
+              {
+                "system": "urn:iso:std:iso:3166",
+                "code": "AU"
+              }
+            ]
+          }
+        ],
+        "item": [
+          {
+            "linkId": "birthDetails",
+            "text": "Birth details - To be completed by health professional",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "group",
+                "type": "group",
+                "item": [
+                  {
+                    "linkId": "nameOfChild",
+                    "text": "Name of child",
+                    "type": "string"
+                  },
+                  {
+                    "linkId": "sex",
+                    "text": "Sex",
+                    "type": "choice",
+                    "answerOption": [
+                      {
+                        "valueCoding": {
+                          "code": "F"
+                        }
+                      },
+                      {
+                        "valueCoding": {
+                          "code": "M"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "linkId": "neonatalInformation",
+                "text": "Neonatal Information",
+                "type": "group",
+                "item": [
+                  {
+                    "linkId": "birthWeight",
+                    "text": "Birth weight (kg)",
+                    "type": "decimal"
+                  },
+                  {
+                    "linkId": "birthLength",
+                    "text": "Birth length (cm)",
+                    "type": "decimal"
+                  },
+                  {
+                    "linkId": "vitaminKgiven",
+                    "text": "Vitamin K given",
+                    "type": "choice",
+                    "answerOption": [
+                      {
+                        "valueCoding": {
+                          "code": "INJECTION"
+                        }
+                      },
+                      {
+                        "valueCoding": {
+                          "code": "INTRAVENOUS"
+                        }
+                      },
+                      {
+                        "valueCoding": {
+                          "code": "ORAL"
+                        }
+                      }
+                    ],
+                    "item": [
+                      {
+                        "linkId": "vitaminKgivenDoses",
+                        "type": "group",
+                        "enableWhen": [
+                          {
+                            "question": "vitaminKgiven",
+                            "operator": "exists",
+                            "answerBoolean": true
+                          }
+                        ],
+                        "item": [
+                          {
+                            "linkId": "vitaminiKDose1",
+                            "text": "1st dose",
+                            "type": "dateTime"
+                          },
+                          {
+                            "linkId": "vitaminiKDose2",
+                            "text": "2nd dose",
+                            "type": "dateTime"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "linkId": "hepBgiven",
+                    "text": "Hep B given y / n",
+                    "type": "boolean",
+                    "item": [
+                      {
+                        "linkId": "hepBgivenDate",
+                        "text": "Date given",
+                        "type": "date"
+                      }
+                    ]
+                  },
+                  {
+                    "linkId": "abnormalitiesAtBirth",
+                    "text": "Abnormalities noted at birth",
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://hapi.fhir.org/baseR4/Questionnaire/72649",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "72649",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-21T10:18:32.719+00:00",
+          "source": "#xvGvhzuTfOLvTLya"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <pre>\n        <b>Birth details - To be completed by health professional</b>\n  Name of child: ____________________________________\n            Sex: __\n            \n  Neonatal Information\n    Birth Weight (kg): ___________\n    Birth Length (cm): ___________\n    Vitamin K given  : __\n             1st dose: ___________\n             2nd dose: ___________\n    Hep B given      : __\n      Date given     : ___________\n    Abnormalities noted at birth:\n      _______________________________________________\n      </pre>\n    </div>"
+        },
+        "url": "http://hl7.org/fhir/Questionnaire/bb",
+        "title": "NSW Government My Personal Health Record",
+        "status": "draft",
+        "subjectType": [
+          "Patient"
+        ],
+        "date": "2013-02-19",
+        "publisher": "New South Wales Department of Health",
+        "jurisdiction": [
+          {
+            "coding": [
+              {
+                "system": "urn:iso:std:iso:3166",
+                "code": "AU"
+              }
+            ]
+          }
+        ],
+        "item": [
+          {
+            "linkId": "birthDetails",
+            "text": "Birth details - To be completed by health professional",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "group",
+                "type": "group",
+                "item": [
+                  {
+                    "linkId": "nameOfChild",
+                    "text": "Name of child",
+                    "type": "string"
+                  },
+                  {
+                    "linkId": "sex",
+                    "text": "Sex",
+                    "type": "choice",
+                    "answerOption": [
+                      {
+                        "valueCoding": {
+                          "code": "F"
+                        }
+                      },
+                      {
+                        "valueCoding": {
+                          "code": "M"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "linkId": "neonatalInformation",
+                "text": "Neonatal Information",
+                "type": "group",
+                "item": [
+                  {
+                    "linkId": "birthWeight",
+                    "text": "Birth weight (kg)",
+                    "type": "decimal"
+                  },
+                  {
+                    "linkId": "birthLength",
+                    "text": "Birth length (cm)",
+                    "type": "decimal"
+                  },
+                  {
+                    "linkId": "vitaminKgiven",
+                    "text": "Vitamin K given",
+                    "type": "choice",
+                    "answerOption": [
+                      {
+                        "valueCoding": {
+                          "code": "INJECTION"
+                        }
+                      },
+                      {
+                        "valueCoding": {
+                          "code": "INTRAVENOUS"
+                        }
+                      },
+                      {
+                        "valueCoding": {
+                          "code": "ORAL"
+                        }
+                      }
+                    ],
+                    "item": [
+                      {
+                        "linkId": "vitaminKgivenDoses",
+                        "type": "group",
+                        "enableWhen": [
+                          {
+                            "question": "vitaminKgiven",
+                            "operator": "exists",
+                            "answerBoolean": true
+                          }
+                        ],
+                        "item": [
+                          {
+                            "linkId": "vitaminiKDose1",
+                            "text": "1st dose",
+                            "type": "dateTime"
+                          },
+                          {
+                            "linkId": "vitaminiKDose2",
+                            "text": "2nd dose",
+                            "type": "dateTime"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "linkId": "hepBgiven",
+                    "text": "Hep B given y / n",
+                    "type": "boolean",
+                    "item": [
+                      {
+                        "linkId": "hepBgivenDate",
+                        "text": "Date given",
+                        "type": "date"
+                      }
+                    ]
+                  },
+                  {
+                    "linkId": "abnormalitiesAtBirth",
+                    "text": "Abnormalities noted at birth",
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://hapi.fhir.org/baseR4/Questionnaire/72696",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "72696",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-21T10:19:50.747+00:00",
+          "source": "#En0uTbGeJCLZ8cdo"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <pre>\n        <b>Birth details - To be completed by health professional</b>\n  Name of child: ____________________________________\n            Sex: __\n            \n  Neonatal Information\n    Birth Weight (kg): ___________\n    Birth Length (cm): ___________\n    Vitamin K given  : __\n             1st dose: ___________\n             2nd dose: ___________\n    Hep B given      : __\n      Date given     : ___________\n    Abnormalities noted at birth:\n      _______________________________________________\n      </pre>\n    </div>"
+        },
+        "url": "http://hl7.org/fhir/Questionnaire/bb",
+        "title": "NSW Government My Personal Health Record",
+        "status": "draft",
+        "subjectType": [
+          "Patient"
+        ],
+        "date": "2013-02-19",
+        "publisher": "New South Wales Department of Health",
+        "jurisdiction": [
+          {
+            "coding": [
+              {
+                "system": "urn:iso:std:iso:3166",
+                "code": "AU"
+              }
+            ]
+          }
+        ],
+        "item": [
+          {
+            "linkId": "birthDetails",
+            "text": "Birth details - To be completed by health professional",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "group",
+                "type": "group",
+                "item": [
+                  {
+                    "linkId": "nameOfChild",
+                    "text": "Name of child",
+                    "type": "string"
+                  },
+                  {
+                    "linkId": "sex",
+                    "text": "Sex",
+                    "type": "choice",
+                    "answerOption": [
+                      {
+                        "valueCoding": {
+                          "code": "F"
+                        }
+                      },
+                      {
+                        "valueCoding": {
+                          "code": "M"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "linkId": "neonatalInformation",
+                "text": "Neonatal Information",
+                "type": "group",
+                "item": [
+                  {
+                    "linkId": "birthWeight",
+                    "text": "Birth weight (kg)",
+                    "type": "decimal"
+                  },
+                  {
+                    "linkId": "birthLength",
+                    "text": "Birth length (cm)",
+                    "type": "decimal"
+                  },
+                  {
+                    "linkId": "vitaminKgiven",
+                    "text": "Vitamin K given",
+                    "type": "choice",
+                    "answerOption": [
+                      {
+                        "valueCoding": {
+                          "code": "INJECTION"
+                        }
+                      },
+                      {
+                        "valueCoding": {
+                          "code": "INTRAVENOUS"
+                        }
+                      },
+                      {
+                        "valueCoding": {
+                          "code": "ORAL"
+                        }
+                      }
+                    ],
+                    "item": [
+                      {
+                        "linkId": "vitaminKgivenDoses",
+                        "type": "group",
+                        "enableWhen": [
+                          {
+                            "question": "vitaminKgiven",
+                            "operator": "exists",
+                            "answerBoolean": true
+                          }
+                        ],
+                        "item": [
+                          {
+                            "linkId": "vitaminiKDose1",
+                            "text": "1st dose",
+                            "type": "dateTime"
+                          },
+                          {
+                            "linkId": "vitaminiKDose2",
+                            "text": "2nd dose",
+                            "type": "dateTime"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "linkId": "hepBgiven",
+                    "text": "Hep B given y / n",
+                    "type": "boolean",
+                    "item": [
+                      {
+                        "linkId": "hepBgivenDate",
+                        "text": "Date given",
+                        "type": "date"
+                      }
+                    ]
+                  },
+                  {
+                    "linkId": "abnormalitiesAtBirth",
+                    "text": "Abnormalities noted at birth",
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://hapi.fhir.org/baseR4/Questionnaire/72736",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "72736",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-21T10:22:03.779+00:00",
+          "source": "#O1JCQoC3rVYYYkEb"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <pre>\n        <b>Birth details - To be completed by health professional</b>\n  Name of child: ____________________________________\n            Sex: __\n            \n  Neonatal Information\n    Birth Weight (kg): ___________\n    Birth Length (cm): ___________\n    Vitamin K given  : __\n             1st dose: ___________\n             2nd dose: ___________\n    Hep B given      : __\n      Date given     : ___________\n    Abnormalities noted at birth:\n      _______________________________________________\n      </pre>\n    </div>"
+        },
+        "url": "http://hl7.org/fhir/Questionnaire/bb",
+        "title": "NSW Government My Personal Health Record",
+        "status": "draft",
+        "subjectType": [
+          "Patient"
+        ],
+        "date": "2013-02-19",
+        "publisher": "New South Wales Department of Health",
+        "jurisdiction": [
+          {
+            "coding": [
+              {
+                "system": "urn:iso:std:iso:3166",
+                "code": "AU"
+              }
+            ]
+          }
+        ],
+        "item": [
+          {
+            "linkId": "birthDetails",
+            "text": "Birth details - To be completed by health professional",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "group",
+                "type": "group",
+                "item": [
+                  {
+                    "linkId": "nameOfChild",
+                    "text": "Name of child",
+                    "type": "string"
+                  },
+                  {
+                    "linkId": "sex",
+                    "text": "Sex",
+                    "type": "choice",
+                    "answerOption": [
+                      {
+                        "valueCoding": {
+                          "code": "F"
+                        }
+                      },
+                      {
+                        "valueCoding": {
+                          "code": "M"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "linkId": "neonatalInformation",
+                "text": "Neonatal Information",
+                "type": "group",
+                "item": [
+                  {
+                    "linkId": "birthWeight",
+                    "text": "Birth weight (kg)",
+                    "type": "decimal"
+                  },
+                  {
+                    "linkId": "birthLength",
+                    "text": "Birth length (cm)",
+                    "type": "decimal"
+                  },
+                  {
+                    "linkId": "vitaminKgiven",
+                    "text": "Vitamin K given",
+                    "type": "choice",
+                    "answerOption": [
+                      {
+                        "valueCoding": {
+                          "code": "INJECTION"
+                        }
+                      },
+                      {
+                        "valueCoding": {
+                          "code": "INTRAVENOUS"
+                        }
+                      },
+                      {
+                        "valueCoding": {
+                          "code": "ORAL"
+                        }
+                      }
+                    ],
+                    "item": [
+                      {
+                        "linkId": "vitaminKgivenDoses",
+                        "type": "group",
+                        "enableWhen": [
+                          {
+                            "question": "vitaminKgiven",
+                            "operator": "exists",
+                            "answerBoolean": true
+                          }
+                        ],
+                        "item": [
+                          {
+                            "linkId": "vitaminiKDose1",
+                            "text": "1st dose",
+                            "type": "dateTime"
+                          },
+                          {
+                            "linkId": "vitaminiKDose2",
+                            "text": "2nd dose",
+                            "type": "dateTime"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "linkId": "hepBgiven",
+                    "text": "Hep B given y / n",
+                    "type": "boolean",
+                    "item": [
+                      {
+                        "linkId": "hepBgivenDate",
+                        "text": "Date given",
+                        "type": "date"
+                      }
+                    ]
+                  },
+                  {
+                    "linkId": "abnormalitiesAtBirth",
+                    "text": "Abnormalities noted at birth",
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://hapi.fhir.org/baseR4/Questionnaire/72745",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "72745",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-21T10:22:05.795+00:00",
+          "source": "#zAH4q2UjkoUVhdCJ"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <pre>\n      </pre>\n    </div>"
+        },
+        "url": "http://example.org/Questionnaire/zika-virus-exposure-assessment",
+        "name": "ExampleZikaVirusExposureAssessment",
+        "title": "Example Zika Virus Exposure Assessment",
+        "status": "draft",
+        "subjectType": [
+          "Patient"
+        ],
+        "date": "2016-11-14",
+        "description": "Example questionnaire to assess Zika virus exposure potential.",
+        "effectivePeriod": {
+          "start": "2016-11-14"
+        },
+        "item": [
+          {
+            "extension": [
+              {
+                "url": "http://example.org/additional-information",
+                "valueAttachment": {
+                  "url": "http://www.cdc.gov/zika/geo/index.html",
+                  "title": "Areas with active Zika virus transmission/exposure risk"
+                }
+              }
+            ],
+            "linkId": "1",
+            "code": [
+              {
+                "system": "http://example.org/questionnaires",
+                "code": "CDE: Resident of or Frequent Traveler to Zika Area"
+              }
+            ],
+            "text": "Are you a resident of, or do you travel frequently to, an area with active Zika transmission?",
+            "type": "boolean"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://example.org/additional-information",
+                "valueAttachment": {
+                  "url": "http://www.cdc.gov/zika/geo/index.html",
+                  "title": "Areas with active Zika virus transmission/exposure risk"
+                }
+              }
+            ],
+            "linkId": "2",
+            "code": [
+              {
+                "system": "http://example.org/questionnaires",
+                "code": "CDE: Recent Travel to Zika Area"
+              }
+            ],
+            "text": "Have you recently traveled to an area with active Zika transmission?",
+            "type": "boolean",
+            "enableWhen": [
+              {
+                "question": "1",
+                "operator": "=",
+                "answerBoolean": false
+              }
+            ]
+          },
+          {
+            "linkId": "3",
+            "code": [
+              {
+                "system": "http://example.org/questionnaires",
+                "code": "CDE: Time Since Returned From Travel"
+              }
+            ],
+            "text": "How long has it been since you returned?",
+            "type": "quantity",
+            "enableWhen": [
+              {
+                "question": "2",
+                "operator": "=",
+                "answerBoolean": true
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://example.org/additional-information",
+                "valueAttachment": {
+                  "url": "http://www.cdc.gov/zika/geo/index.html",
+                  "title": "Areas with active Zika virus transmission/exposure risk"
+                }
+              }
+            ],
+            "linkId": "4",
+            "code": [
+              {
+                "system": "http://example.org/questionnaires",
+                "code": "CDE: Recent Sexual Encounter with Traveler to Zika Area"
+              }
+            ],
+            "text": "Have you recently had condomless sex with a partner that has travelled in an area with active Zika transmission?",
+            "type": "boolean",
+            "enableWhen": [
+              {
+                "question": "2",
+                "operator": "=",
+                "answerBoolean": false
+              }
+            ]
+          },
+          {
+            "linkId": "5",
+            "code": [
+              {
+                "system": "http://example.org/questionnaires",
+                "code": "CDE: Time Since Sexual Encounter"
+              }
+            ],
+            "text": "How long has it been since your last condomless sexual encounter?",
+            "type": "quantity",
+            "enableWhen": [
+              {
+                "question": "4",
+                "operator": "=",
+                "answerBoolean": true
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://example.org/additional-information",
+                "valueAttachment": {
+                  "url": "http://www.cdc.gov/zika/geo/index.html",
+                  "title": "Areas with active Zika virus transmission/exposure risk"
+                }
+              }
+            ],
+            "linkId": "6",
+            "code": [
+              {
+                "system": "http://example.org/questionnaires",
+                "code": "CDE: Planned Travel to Zika Area"
+              }
+            ],
+            "text": "Do you plan to travel to an area with active Zika transmission?",
+            "type": "boolean",
+            "enableWhen": [
+              {
+                "question": "4",
+                "operator": "=",
+                "answerBoolean": false
+              }
+            ]
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://hapi.fhir.org/baseR4/Questionnaire/72747",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "72747",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-21T10:22:06.231+00:00",
+          "source": "#02ao0wcXLDNLDKbK"
+        },
+        "title": "Obesity Questionnaire",
+        "status": "active",
+        "subjectType": [
+          "Patient"
+        ],
+        "date": "2010",
+        "code": [
+          {
+            "system": "https://details.loinc.org/LOINC/39156-5.html",
+            "code": "39156-5 ",
+            "display": "Body mass index"
+          }
+        ],
+        "item": [
+          {
+            "linkId": "1",
+            "text": "DO YOU SEE YOURSELF AS AN OBESE PERSON?",
+            "type": "group"
+          },
+          {
+            "linkId": "2",
+            "text": "DO YOU BELIEVE YOUR EATING HABITS ARE THE CAUSE OF YOUR OBESITY CONDITION?",
+            "type": "group"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://hapi.fhir.org/baseR4/Questionnaire/72749",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "72749",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-21T10:22:06.608+00:00",
+          "source": "#iixc3Th9nPwNvIKs"
+        },
+        "title": "Obesity Questionnaire",
+        "status": "active",
+        "subjectType": [
+          "Patient"
+        ],
+        "date": "2010",
+        "code": [
+          {
+            "system": "https://details.loinc.org/LOINC/39156-5.html",
+            "code": "39156-5 ",
+            "display": "Body mass index"
+          }
+        ],
+        "item": [
+          {
+            "linkId": "1",
+            "text": "DO YOU SEE YOURSELF AS AN OBESE PERSON?",
+            "type": "display"
+          },
+          {
+            "linkId": "2",
+            "text": "DO YOU BELIEVE YOUR EATING HABITS ARE THE CAUSE OF YOUR OBESITY CONDITION?",
+            "type": "display"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://hapi.fhir.org/baseR4/Questionnaire/72751",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "72751",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-21T10:22:06.972+00:00",
+          "source": "#g6GNHMFuQ7NXtfq6"
+        },
+        "title": "Obesity Questionnaire",
+        "status": "active",
+        "subjectType": [
+          "Patient"
+        ],
+        "date": "2010",
+        "code": [
+          {
+            "system": "https://details.loinc.org/LOINC/39156-5.html",
+            "code": "39156-5 ",
+            "display": "Body mass index"
+          }
+        ],
+        "item": [
+          {
+            "linkId": "1",
+            "text": "DO YOU SEE YOURSELF AS AN OBESE PERSON?",
+            "type": "decimal"
+          },
+          {
+            "linkId": "2",
+            "text": "DO YOU BELIEVE YOUR EATING HABITS ARE THE CAUSE OF YOUR OBESITY CONDITION?",
+            "type": "decimal"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://hapi.fhir.org/baseR4/Questionnaire/72752",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "72752",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-21T10:22:07.352+00:00",
+          "source": "#mR8u0mm0cv7vZEkO"
+        },
+        "title": "Obesity Questionnaire",
+        "status": "active",
+        "subjectType": [
+          "Patient"
+        ],
+        "date": "2010",
+        "code": [
+          {
+            "system": "https://details.loinc.org/LOINC/39156-5.html",
+            "code": "39156-5 ",
+            "display": "Body mass index"
+          }
+        ],
+        "item": [
+          {
+            "linkId": "1",
+            "text": "DO YOU SEE YOURSELF AS AN OBESE PERSON?",
+            "type": "integer"
+          },
+          {
+            "linkId": "2",
+            "text": "DO YOU BELIEVE YOUR EATING HABITS ARE THE CAUSE OF YOUR OBESITY CONDITION?",
+            "type": "integer"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://hapi.fhir.org/baseR4/Questionnaire/72780",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "72780",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-21T10:23:08.905+00:00",
+          "source": "#ph9Gm6wV3cD20gmd"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <pre>\n      </pre>\n    </div>"
+        },
+        "url": "http://example.org/Questionnaire/zika-virus-exposure-assessment",
+        "name": "ExampleZikaVirusExposureAssessment",
+        "title": "Example Zika Virus Exposure Assessment",
+        "status": "draft",
+        "subjectType": [
+          "Patient"
+        ],
+        "date": "2016-11-14",
+        "description": "Example questionnaire to assess Zika virus exposure potential.",
+        "effectivePeriod": {
+          "start": "2016-11-14"
+        },
+        "item": [
+          {
+            "extension": [
+              {
+                "url": "http://example.org/additional-information",
+                "valueAttachment": {
+                  "url": "http://www.cdc.gov/zika/geo/index.html",
+                  "title": "Areas with active Zika virus transmission/exposure risk"
+                }
+              }
+            ],
+            "linkId": "1",
+            "code": [
+              {
+                "system": "http://example.org/questionnaires",
+                "code": "CDE: Resident of or Frequent Traveler to Zika Area"
+              }
+            ],
+            "text": "Are you a resident of, or do you travel frequently to, an area with active Zika transmission?",
+            "type": "boolean"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://example.org/additional-information",
+                "valueAttachment": {
+                  "url": "http://www.cdc.gov/zika/geo/index.html",
+                  "title": "Areas with active Zika virus transmission/exposure risk"
+                }
+              }
+            ],
+            "linkId": "2",
+            "code": [
+              {
+                "system": "http://example.org/questionnaires",
+                "code": "CDE: Recent Travel to Zika Area"
+              }
+            ],
+            "text": "Have you recently traveled to an area with active Zika transmission?",
+            "type": "boolean",
+            "enableWhen": [
+              {
+                "question": "1",
+                "operator": "=",
+                "answerBoolean": false
+              }
+            ]
+          },
+          {
+            "linkId": "3",
+            "code": [
+              {
+                "system": "http://example.org/questionnaires",
+                "code": "CDE: Time Since Returned From Travel"
+              }
+            ],
+            "text": "How long has it been since you returned?",
+            "type": "quantity",
+            "enableWhen": [
+              {
+                "question": "2",
+                "operator": "=",
+                "answerBoolean": true
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://example.org/additional-information",
+                "valueAttachment": {
+                  "url": "http://www.cdc.gov/zika/geo/index.html",
+                  "title": "Areas with active Zika virus transmission/exposure risk"
+                }
+              }
+            ],
+            "linkId": "4",
+            "code": [
+              {
+                "system": "http://example.org/questionnaires",
+                "code": "CDE: Recent Sexual Encounter with Traveler to Zika Area"
+              }
+            ],
+            "text": "Have you recently had condomless sex with a partner that has travelled in an area with active Zika transmission?",
+            "type": "boolean",
+            "enableWhen": [
+              {
+                "question": "2",
+                "operator": "=",
+                "answerBoolean": false
+              }
+            ]
+          },
+          {
+            "linkId": "5",
+            "code": [
+              {
+                "system": "http://example.org/questionnaires",
+                "code": "CDE: Time Since Sexual Encounter"
+              }
+            ],
+            "text": "How long has it been since your last condomless sexual encounter?",
+            "type": "quantity",
+            "enableWhen": [
+              {
+                "question": "4",
+                "operator": "=",
+                "answerBoolean": true
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://example.org/additional-information",
+                "valueAttachment": {
+                  "url": "http://www.cdc.gov/zika/geo/index.html",
+                  "title": "Areas with active Zika virus transmission/exposure risk"
+                }
+              }
+            ],
+            "linkId": "6",
+            "code": [
+              {
+                "system": "http://example.org/questionnaires",
+                "code": "CDE: Planned Travel to Zika Area"
+              }
+            ],
+            "text": "Do you plan to travel to an area with active Zika transmission?",
+            "type": "boolean",
+            "enableWhen": [
+              {
+                "question": "4",
+                "operator": "=",
+                "answerBoolean": false
+              }
+            ]
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://hapi.fhir.org/baseR4/Questionnaire/72781",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "72781",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-21T10:23:09.296+00:00",
+          "source": "#IdZFGyDWATPk2teh"
+        },
+        "title": "Obesity Questionnaire",
+        "status": "active",
+        "subjectType": [
+          "Patient"
+        ],
+        "date": "2010",
+        "code": [
+          {
+            "system": "https://details.loinc.org/LOINC/39156-5.html",
+            "code": "39156-5 ",
+            "display": "Body mass index"
+          }
+        ],
+        "item": [
+          {
+            "linkId": "1",
+            "text": "DO YOU SEE YOURSELF AS AN OBESE PERSON?",
+            "type": "group"
+          },
+          {
+            "linkId": "2",
+            "text": "DO YOU BELIEVE YOUR EATING HABITS ARE THE CAUSE OF YOUR OBESITY CONDITION?",
+            "type": "group"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://hapi.fhir.org/baseR4/Questionnaire/72782",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "72782",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-21T10:23:09.688+00:00",
+          "source": "#z86peZVa5t60agxY"
+        },
+        "title": "Obesity Questionnaire",
+        "status": "active",
+        "subjectType": [
+          "Patient"
+        ],
+        "date": "2010",
+        "code": [
+          {
+            "system": "https://details.loinc.org/LOINC/39156-5.html",
+            "code": "39156-5 ",
+            "display": "Body mass index"
+          }
+        ],
+        "item": [
+          {
+            "linkId": "1",
+            "text": "DO YOU SEE YOURSELF AS AN OBESE PERSON?",
+            "type": "display"
+          },
+          {
+            "linkId": "2",
+            "text": "DO YOU BELIEVE YOUR EATING HABITS ARE THE CAUSE OF YOUR OBESITY CONDITION?",
+            "type": "display"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }
+  ] //form.resource
+
   return (
     <div>
-        { listaFormularios.map((form, index) => (
-              <div>
-                <h1>{form.title}</h1>
-                <QuestionnaireComponent formId={index} formDef={form}></QuestionnaireComponent>
-              </div>
-            ))
-        }
+    <div>
+      {listaFormularios.map((form, index) => (
+        <Accordion key={index}>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography variant="h6">{form.title}</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <QuestionnaireComponent formDef={form} formId={form.id}/>
+          </AccordionDetails>
+        </Accordion>
+      ))}
+    </div>
+    <QuestionnaireComponent formDef={listaFormularios[0]} formId="44315366"></QuestionnaireComponent>
     </div>
   );
 };

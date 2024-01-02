@@ -1,33 +1,50 @@
-import "./GeneralWidget.css";
+import styles from "./GeneralWidget.module.css";
 
-const GeneralWidget = () => {
+function calcularEdad(fechaNacimiento) {
+  const hoy = new Date();
+  const fechaNac = new Date(fechaNacimiento);
+  let edad = hoy.getFullYear() - fechaNac.getFullYear();
+  const mes = hoy.getMonth() - fechaNac.getMonth();
+
+  if (mes < 0 || (mes === 0 && hoy.getDate() < fechaNac.getDate())) {
+    edad--;
+  }
+
+  return edad;
+}
+
+const GeneralWidget = ({birthDate, gender, phone, id, edit}) => {
   return (
-    <div className="generalwidget">
-      <div className="title">
-        <div className="icon">
-          <div className="ellipse" />
-          <img className="contacts-icon" alt="" src="/contacts.svg" />
+    <div className={styles.generalwidget}>
+      <div className={styles.title}>
+        <div className={styles.icon}>
+          <div className={styles.ellipse} />
+          <img
+            className={styles["contacts-icon"]}
+            alt=""
+            src="/contacts.svg"
+          />
         </div>
-        <b className="title1">Información General</b>
-        <b className="text">Edit</b>
+        <b className={styles.title1}>Información General</b>
+        {edit && <b className={styles.text}>Edit</b>}
       </div>
-      <div className="table">
-        <ul className="text-wrapper">
-          <div className="item">
-            <div className="text1">Fecha de Nacimiento</div>
-            <div className="text2"> 05/12/1955 • 66 y.o.</div>
+      <div className={styles.table}>
+        <ul className={styles["text-wrapper"]}>
+          <div className={styles.item}>
+            <div className={styles.text1}>Fecha de Nacimiento</div>
+            <div className={styles.text2}> {birthDate} • {calcularEdad(birthDate)} y.o.</div>
           </div>
-          <div className="item">
-            <div className="text1">Sexo</div>
-            <div className="text2">Masculino</div>
+          <div className={styles.item}>
+            <div className={styles.text1}>Sexo</div>
+            <div className={styles.text2}>{gender}</div>
           </div>
-          <div className="item">
-            <div className="text1">Número Telefónico</div>
-            <div className="text2">+56912345678</div>
+          <div className={styles.item}>
+            <div className={styles.text1}>Número Telefónico</div>
+            <div className={styles.text2}>{phone}</div>
           </div>
-          <div className="item">
-            <div className="text1">Rut</div>
-            <div className="text2">12345678-K</div>
+          <div className={styles.item}>
+            <div className={styles.text1}>ID</div>
+            <div className={styles.text2}>{id}</div>
           </div>
         </ul>
       </div>

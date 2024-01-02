@@ -1,10 +1,12 @@
 import "./PatienOverview.css";
 
-const PatienOverview = () => {
+const PatienOverview = ({id, name, avatar}) => {
+  
+  console.log(avatar)
   return (
     <div className="patienoverview">
       <div className="icon">
-          <div className="icon-child" style={{ backgroundImage: `url(/avatar.JPG)` }}></div>
+          <div className="icon-child" style={{ backgroundImage: `url(${avatar || '/avatar.JPG'})`}}></div>
       </div>
       <div className="navlocation">
         <div className="location">
@@ -16,7 +18,7 @@ const PatienOverview = () => {
               <div className="text">{`>`}</div>
             </div>
             <div className="item">
-              <div className="text">Juan Carlos Bodoque</div>
+              <div className="text">{name}</div>
             </div>
             <div className="item1">
               <div className="text">{`>`}</div>
@@ -26,7 +28,7 @@ const PatienOverview = () => {
             </div>
           </div>
         </div>
-        <b className="user">Juan Carlos Bodoque</b>
+        <b className="user">{name}</b>
         <div className="tabstop">
           <div className="location">
             <div className="tabs-group">
