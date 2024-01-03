@@ -1,6 +1,11 @@
 import "./PatienOverview.css";
+import { useNavigate } from 'react-router-dom';
+
+
 
 const PatienOverview = ({id, name, avatar}) => {
+
+  const navigate = useNavigate();
   
   console.log(avatar)
   return (
@@ -39,7 +44,7 @@ const PatienOverview = ({id, name, avatar}) => {
               </div>
               <div className="item5">
                 <div className="title">
-                  <div className="text1">Documents</div>
+                  <div className="text1" onClick={ () => navigate('/que')}>Formularios</div>
                 </div>
               </div>
               <div className="item5">

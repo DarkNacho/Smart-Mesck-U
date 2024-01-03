@@ -1,6 +1,6 @@
 import styles from "./InfoList.module.css";
 
-const InfoList = ({ data , edit }) => {
+const InfoList = ({ data, title, icon , edit }) => {
   console.log("data:", data);
 
   let content;
@@ -24,10 +24,10 @@ const InfoList = ({ data , edit }) => {
           <img
             className={styles["contacts-icon"]}
             alt=""
-            src="/medication.svg"
+            src={icon}
           />
         </div>
-        <b className={styles.title1}>Info List</b>
+        <b className={styles.title1}>{title}</b>
         { edit && <b className={styles.text}>Edit</b> }
       </div>
       <div className={styles.table}>
